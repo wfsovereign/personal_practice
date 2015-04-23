@@ -1,3 +1,8 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,23 +43,30 @@ body {
   color: #ffffff;
 }
 
-.nav-header {
+.nav {
   margin-top: 5%;
   border-bottom: 2px solid #9e0909;
-  width: 100%;
+  height: 44px;
+}
+.nav .nav-container {
+  width: 1210px;
+  margin: 0 auto;
   position: relative;
 }
-.nav-header .nav-aside {
-  margin-left: 10%;
+
+.nav-aside {
+  float: left;
+  overflow: visible;
+  position: relative;
   background-color: #9e0909;
   width: 206px;
-  height: 50px;
+  height: 44px;
 }
-.nav-header .nav-aside .all-category {
+.nav-aside .all-category {
   width: inherit;
   height: inherit;
 }
-.nav-header .nav-aside .all-category a {
+.nav-aside .all-category a {
   width: 90%;
   margin: 0 auto;
   height: inherit;
@@ -62,18 +74,18 @@ body {
   align-items: center;
   color: #fff;
 }
-.nav-header .nav-aside .nav-list {
+.nav-aside .nav-list {
   margin-top: 2px;
   width: 206px;
 }
-.nav-header .nav-aside .nav-list .item {
+.nav-aside .nav-list .item {
   background-color: #b91119;
   height: 35px;
   display: flex;
   align-items: center;
   position: relative;
 }
-.nav-header .nav-aside .nav-list .item h3 {
+.nav-aside .nav-list .item h3 {
   height: 31px;
   padding: 0 10px;
   margin: 0;
@@ -83,14 +95,35 @@ body {
   font-weight: 400;
   color: #fff;
 }
-.nav-header .nav-aside .nav-list .item h3 a {
+.nav-aside .nav-list .item h3 a {
   text-decoration: none;
   color: inherit;
 }
-.nav-header .nav-aside .nav-list .item i {
+.nav-aside .nav-list .item i {
   position: absolute;
   right: 4%;
   top: 9.5px;
   color: lavender;
   font-size: 0.8em;
+}
+
+.nav-items {
+  float: left;
+}
+.nav-items ul {
+  list-style: none;
+}
+.nav-items ul li {
+  float: left;
+}
+.nav-items ul li a {
+  height: 44px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  font: 400 15px/44px "microsoft yahei";
+  color: #333;
+}
+.nav-items ul li a:hover {
+  color: red;
 }
